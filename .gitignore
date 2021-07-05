@@ -1,0 +1,8 @@
+*.pyc
+*.jpg
+output_images/TPU_annotated_images/*
+output_images/*/*jpg
+*.swp
+sample_video/inference_written_videos/*
+*/*test*sh
+object_detect_video/cloud_grade_models_tensorflow/

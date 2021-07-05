@@ -1,0 +1,24 @@
+some useful links:
+https://coral.withgoogle.com/docs/edgetpu/compiler/
+https://thenewstack.io/train-and-deploy-tensorflow-models-optimized-for-google-edge-tpu/
+
+STEP 1: convert frozen pb file to quantized tflite
+
+    - converts to int8
+
+    - creates a final model called final_paper_joint_waymo_construction_MN2_quantized_edgetpu.tflite (for example)
+
+STEP 2: convert quantized tflite to one that works on EDGETPU using edgetpu_compiler
+
+    - goes to the directory with the .tflite model
+
+    - runs edgetpu_compiler from the command line 
+
+    - this creates a new model with the _edgetpu SUFFIX
+
+An example of the log that occurs after compilation:
+
+On-chip memory available for caching model parameters: 7.62MiB
+On-chip memory used for caching model parameters: 5.21MiB
+Off-chip memory used for streaming uncached model parameters: 0.00B
+

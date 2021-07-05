@@ -1,0 +1,18 @@
+a. the goal of this subdir is to run the TPU and CPU models
+on video streams
+
+b. there are two types of scripts, ones that directly write annotations to a saved video or those that write them to a csv and don't create an output video
+
+1. type workon cv to enter the OpenCV2 virtual env
+
+
+2. default_MN2_TPU_run_inference.sh
+    - runs the default mobilenet 2 on a video and writes a video out
+    - example output video: edge_TPU_default_MN2_1686_confidence_0.4_max_objects_7.avi
+    - shows all top 7 objects with confidence above 0.4
+    - automatically generated at: inference_written_videos/1686
+
+3. 
+  retrain_MN2_construction_waymo_run_inference.sh
+    - same as above, but with harvestnet custom models
+

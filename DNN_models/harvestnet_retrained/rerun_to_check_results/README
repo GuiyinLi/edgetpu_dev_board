@@ -1,0 +1,6 @@
+these were re-run months later to see the robustness to a new edge tpu compiler version
+and see if similar results hold with a new training process
+
+these work well, but models were trained for 30k steps
+
+this shows updated edge tpu compiler models work

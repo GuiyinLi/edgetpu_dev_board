@@ -1,0 +1,16 @@
+go through a set of test images with GROUND TRUTH LABELS and calculate
+the mAP (mean average precision) to see how well the edge TPU is doing 
+
+- creates a csv of annotations, then use eyal and jenya's script
+
+1. where are the output images?
+     - on the edge TPU
+     - /mnt/validation_images_final_paper_waymo_construction/waymo_construction
+
+    - run_map_csv.sh
+    - saves csv of annotations on ALL IMAGES, change MAX_IMAGES to get less
+
+2. can we just run on a few examples to see how the models do?
+    - run_few_images_save_annotations.sh
+    - retrain_model_run_few_images_save_annotations.sh [model trained after a long time]
+

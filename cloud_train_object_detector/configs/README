@@ -1,0 +1,21 @@
+key parts of config file to change for a new application/dataset:
+
+num_classes
+    - should match label file, we had 13
+
+fine_tune_checkpoint:
+    - where is the model.ckpt you downloaded from google?
+
+label_map_path:
+    - label files
+    - NOTE THIS STARTS FROM 1
+
+input_path:
+    - list of tfrecords for train, val data
+
+    - eg: 
+        - input_path: ["/HD1Data/HarvestNet/final_paper_results/training_data_tfrecords/waymo_new_train.record", "/HD1Data/HarvestNet/final_paper_results/training_data_tfrecords/construction_new_train.record"]
+
+graph_rewriter:
+    - delay: if you train for 50k steps, means start quantization say at 48k steps
+

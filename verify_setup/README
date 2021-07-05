@@ -1,0 +1,18 @@
+- key note:
+	- this code was FIRST tested on the coral dev board, where the edge TPU API was downloaded at: 
+	- CODE_DIR=/usr/lib/python3/dist-packages/edgetpu/demo/
+
+	- we also tested it as of Jan 2020 using the edgetpu API version 2.12.2
+	  on a Raspberry Pi 4 and Coral Edge TPU USB accelerator, which works
+	- for this, use CODE_DIR=/usr/share/edgetpu/examples
+
+- check the basic demo scripts:
+    - verify_setup
+    - run_classify_demo.sh
+    - object_detect_demo.sh
+    - these are essentially copied from the website
+
+- run these again with OUR re-trained models
+    - custom_retrained_model_detect_demo.sh
+    - output images are here: edgetpu_dev_board_release/output_images/harvestnet_retrained
+
